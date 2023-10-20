@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #FFF3DA;
+    text-align: center;
+}
+  
+h1 {
+    color: #df744a;
+    font-size: 36px;
+    padding: 20px;
+}
+  
+.card {
+    background-color: #fafafb;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 80%;
+}
+  
+h2 {
+    color: #df744a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.coluna {
+    margin: 30px 0px 0px 240px;  
+    padding: 0 0px 0 130px;
+}
+
+h3 {
+    color: #df744a;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.rotate {
+    margin-left: 70px;
+}
+  
+.square1 {
+    margin-top: 10px;
+    margin-left: 300px;
+    background: #f2c76e;
+    width: 150px;
+    height: 150px;
+}
+
+.scale {
+    margin-left: 70px;
+}
+
+.square2, .square3, .square4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 75px;
+    background: #f2c76e;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.translate {
+    margin-left: 70px;
+}
+
+.square5, .square6 {
+    margin-top: 10px;
+    margin-left: 148px;
+    background: #f2c76e;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.skew {
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+.square7, .square8, .square9 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 75px;
+    background: #f2c76e;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.matrix {
+    margin-left: 70px;
+}
+
+.square10 {
+    margin-top: 10px;
+    margin-left: 300px;
+    background: linear-gradient(#f2c76e, #a98b4d, #f8e3b6);
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.tresd-rotate1 {
+    margin-top: 180px;
+    margin-left: 70px;
+}
+  
+.square11 {
+    margin-top: 10px;
+    margin-left: 300px;
+    background: linear-gradient(#f2c76e, #a98b4d, #f8e3b6);
+    width: 150px;
+    height: 150px;
+    float: left;
+} 
+
+.tresd-rotate2 {
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+.square12, .square13, .square14 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 75px;
+    background: linear-gradient(#f2c76e, #a98b4d, #f8e3b6);
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+@media (max-width: 1920px) {
+    .coluna {
+        margin-left: 80px;
+    }
+
+    .tresd-rotate2 {
+        margin-top: 195px;
+    }
+}
+
+.square1:hover {
+    transform: rotate(30deg);
+}
+  
+.square2:hover {
+    transform: scale(2,3);
+}
+  
+.square3:hover {
+    transform: scaleX(1.8);
+}
+  
+.square4:hover {
+    transform: scaleY(2);
+}
+
+.square5:hover {
+    transform: translate(-50px, -50px);
+}
+
+.square6:hover {
+    transform: translate(50px, 50px);
+}
+
+.square7:hover {
+    transform: skew(20deg, 20deg);
+}
+
+.square8:hover {
+    transform: skewX(20deg);
+}
+
+.square9:hover {
+    transform: skewY(20deg);
+}
+
+.square10:hover {
+    transform: matrix(0.5, 2, 2, 0.5, -50, 100);
+}
+
+.square11:hover {
+    margin-bottom: 50px;
+    transform: rotate3d(4, 4, 4, 90deg);
+}
+
+.square12:hover {
+    transform: rotateX(50deg);
+}
+
+.square13:hover {
+    transform: rotateY(50deg);
+}
+
+.square14:hover {
+    transform: rotateZ(50deg);
+}
